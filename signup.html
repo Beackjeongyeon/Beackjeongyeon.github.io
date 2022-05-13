@@ -1,17 +1,104 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title>로그인</title>
+		<title>Generic - Stellar by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-            <input type = "text"  id="id" placeholder="아이디를 입력 해주세요" style="width:300px;height:40px;font-size:15px;"><i class="bi bi-lock" ></i>
-			<input type = "text" id="pw" placeholder="패스워드를 입력 해주세요" style="width:300px;height:40px;font-size:15px"><i class="bi bi-lock"></i>
-						
+		
+		<!-- Wrapper -->
+		<!--로그인창  -->
+		
+		<div id="wrapper">
 			
+			<!-- Header -->
+			<header id="header">
+				<span class="logo"><img src="images/logo.svg" alt="" /></span>
+				<h1>로그인</h1>
+				
+			</header>
+			
+			<!-- Main -->
+			<div id="main">
+				
+				<!-- Content -->
+				<section id="content" class="main">
 
-	</body>
-</html>
+
+					<center>
+					<input type = "text"  id="id" placeholder="아이디를 입력 해주세요" style="width:300px;height:40px;font-size:15px; margin-top:30px;">
+					<input type = "password" id="pw" placeholder="패스워드를 입력 해주세요" style="width:300px;height:40px;font-size:15px">
+					<a href="./joinup.html"  style="font-size: 12px; margin-right: 25px;">회원가입</a> 
+					<a href="" style="font-size: 12px;">아이디 또는 비밀번호찾기</a>
+					<br>
+
+
+				
+					<a href="./index.html" class="button" style="width:500px; height:60px; font-size: 25px; margin-top: 60px;">로그인</a>
+					</center>
+					
+						
+								</section>
+	
+						</div>
+	
+					<!-- Footer -->
+						<footer id="footer">
+							<section>
+							
+								<ul class="actions">
+									<a href="./index.html" class="button" style="width:250px; height:60px; font-size: 25px;margin-left: 243px;">뒤로가기</a>
+								</ul>
+
+							</section>
+							<section>
+								<h2>Business Card</h2>
+							<dl class="alt">
+								
+								<dt>Phone</dt>
+								<dd>(010)3968-1649</dd>
+								<dt>Email</dt>
+								<dd><a href="#">qorwjddus03@naver.com</a></dd>
+							</dl>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								</ul>
+							</section>
+							<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</footer>
+	
+				</div>
+	
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrollex.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+	
+		</body>
+		<script>
+			const pw1 = document.getElementById("pw").value;
+			const pw2 = document.getElementById("pw").value;
+			const checkResult = document.getElementById("pw-check-result");
+			const lock2 = document.getElementById("lock2")
+			if(pw1 ==pw2){
+				checkResult.innerHTML = "일치합니다.";
+				checkResult.style.color = "green";
+				lock2.style.color="green";
+			}else{
+				checkResult.innerHTML = "일치하지 않습니다.";
+				checkResult.style.color ="red";
+				lock2.style.color = "red";
+			}
+		</script>
+	</html>
